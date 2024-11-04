@@ -1,6 +1,6 @@
 #  Planate description
 
-In this repo we ware exploring different planets.
+In this repo we were exploring different planet.
 
 ## Contact
 
