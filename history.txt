@@ -1,0 +1,161 @@
+    1  bash Downloads/A
+    2  bash Downloads/Anaconda3-2024.10-1-Linux-x86_64.sh 
+    3  jupyter notebook
+    4  sudo apt install git
+    5  git --version
+    6  pwd
+    7  ls
+    8  ls-l
+    9  ls -l
+   10  ls -lh
+   11  cd Desktop
+   12  pwd
+   13  man ls
+   14  cd Desktop
+   15  ls
+   16  cd ..
+   17  cd -
+   18  cd Desktop/
+   19  ls Desktop/shell-lesson
+   20  cd Desktop
+   21  cd Desktop/shell-lesson/
+   22  cd -
+   23  cd Desktop/shell-lesson/
+   24  cd ..
+   25  ls -a
+   26  cd ..
+   27  ls -a
+   28  cd Desktop/shell-lesson/
+   29  ls -a
+   30  cd ..
+   31  cd shell-lesson/
+   32  mkdir firstdir
+   33  ls
+   34  ls firstdir/
+   35  ls - firstdir/
+   36  ls -a firstdir/
+   37  ls
+   38  cat 829-0.txt 
+   39  head 829-0.txt 
+   40  tail 829-0.txt 
+   41  head -n 1
+   42  head -n 1 829-0.txt 
+   43  less 829-0.txt 
+   44  head 829-0.txt 33504-0.txt 
+   45  head *.txt
+   46  mv 829-0.txt gulliver.txt
+   47  ls
+   48  cp gulliver.txt gulliver-backup.txt
+   49  ls
+   50  mv gulliver.txt firstdir/
+   51  ls firstdir/
+   52  mv firstdir backup
+   53  mv gulliver-backup.txt backup
+   54  ls
+   55  mv backup/gulliver.txt .
+   56  ls
+   57  rm gulliver.txt 
+   58  ls
+   59  rm -i *tsv
+   60  n
+   61  echo "Mein Name ist Rosina"
+   62  NAME=Rosina
+   63  echo "Mein Name ist $NAME"
+   64  touch a.txt b.txt c.txt
+   65  ls
+   66  for FILE in a.txt b.txt c.txt ; do echo $FILE; cp "$FILE" backup_"$FILE"; done
+   67  ls
+   68  for FILE in *txt; do echo $FIle; done
+   69  for FILE in *txt; do echo $FILE; done
+   70  for FILE in *.txt; do echo $FILE; head -n 1; tail -n 1; done
+   71  for FILE in *.txt; do echo $FILE; head -n 1 *.txt; tail -n 1 *.txt; done
+   72  for FILE in *.txt; do echo $FILE; head -n 1 $FILE; tail -n 1 $FILE; done
+   73  history
+   74  history > history.txt
+   75  ls
+   76  nano mein_bash_skript.sh
+   77  cat mein_bash_skript.sh
+   78  bash mein_bash_skript.sh
+   79  cd ..
+   80  pwd
+   81  git config --global user.name "Rosina Tuttobene"
+   82  git config --global user.email "RosinaT91@aol.com"
+   83  cat gitconfig
+   84  git config --list
+   85  git helf config
+   86  git help config
+   87  mkdir planet
+   88  cd planet
+   89  git init
+   90  ls -a
+   91  git status
+   92  git checkout -b main
+   93  git status
+   94  touch mars.txt
+   95  ls
+   96  nano mars.txt 
+   97  git status
+   98  git add mars.txt
+   99  git status
+  100  git commit -m "Start notes on Mars as a base"
+  101  git log
+  102  git status
+  103  nano mars.txt
+  104  git status
+  105  git diff
+  106  git add mars.txt 
+  107  git status
+  108  git commit
+  109  git commit -m 2Add concerns about effect of Mars'moons on WOlfman2
+  110  git commit -m "Add concerns about effect of Mars'moons on Wolfman"
+  111  mars.txt it log
+  112  git log
+  113  nano mars.txt 
+  114  git add mars.txt 
+  115  git diff
+  116  git diff --staged
+  117  git commit -m "Discuss concerns about Mars'climate for Mummy"
+  118  git log
+  119  git log --oneline
+  120  nano mars.txt 
+  121  git diff HEAD mars.txt
+  122  git diff HEAD~1 mars.txt
+  123  git diff HEAD~2 mars.txt
+  124  git diff HEAD~3 mars.txt
+  125  git show HEAD~2
+  126  git diff d7730a
+  127  git status
+  128  git checkout HEAD mars.txt
+  129  cat mars.txt 
+  130  git restore mars.txt
+  131  git checkout HEAD~2 mars.txt
+  132  cat mars.txt 
+  133  git status
+  134  git diff --staged
+  135  git restore mars.txt
+  136  cat mars.txt 
+  137  git restore -s HEAD mars.txt
+  138  cat mars.txt 
+  139  nano mars.txt 
+  140  git diff
+  141  git restore mars.txt
+  142  git diff
+  143  cat mars.txt 
+  144  git diff HEAD~1
+  145  git diff HEAD~2
+  146  git diff HEAD main 
+  147  git diff HEAD mars.txt
+  148  nano mars.txt 
+  149  git add
+  150  mkdir results
+  151  touch a.dat b.dat c.dat results/a.out results/b.out
+  152  git status
+  153  touch .gitignore
+  154  nano .gitignore
+  155  git status
+  156  git add .gitignore
+  157  git commit -m "This commit will ignore data files and the results folder"
+  158  git status
+  159  git status --ignored
+  160  git add a.dat
+  161  history >history.txt
